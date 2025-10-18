@@ -1,0 +1,43 @@
+{
+  "collections": [
+    {"id": "c-daily", "name": "Daily Pooja", "slug": "daily-pooja", "image": "https://picsum.photos/seed/daily/300"},
+    {"id": "c-festive", "name": "Festive", "slug": "festive", "image": "https://picsum.photos/seed/festive/300"},
+    {"id": "c-temple", "name": "Temple Essentials", "slug": "temple-essentials", "image": "https://picsum.photos/seed/temple/300"},
+    {"id": "c-gifts", "name": "Devotional Gifts", "slug": "devotional-gifts", "image": "https://picsum.photos/seed/gifts/300"},
+    {"id": "c-homam", "name": "Homam & Havan", "slug": "homam-havan", "image": "https://picsum.photos/seed/havan/300"},
+    {"id": "c-incense", "name": "Incense & Dhoop", "slug": "incense-dhoop", "image": "https://picsum.photos/seed/incense/300"}
+  ],
+  "products": [
+    {"id": "p-001", "name": "Brass Aarti Diya (Small)", "price_inr": 149, "image": "https://picsum.photos/seed/diya1/640/640", "collection": "daily-pooja", "stock": 120, "desc": "Hand‑cast brass diya for daily aarti rituals."},
+    {"id": "p-002", "name": "Pure Camphor 100g", "price_inr": 129, "image": "https://picsum.photos/seed/camphor/640/640", "collection": "daily-pooja", "stock": 90, "desc": "100% natural camphor pellets for pure fragrance."},
+    {"id": "p-003", "name": "Cotton Wicks (Pack of 200)", "price_inr": 89, "image": "https://picsum.photos/seed/wicks/640/640", "collection": "daily-pooja", "stock": 500, "desc": "Soft, long‑burn cotton wicks for diyas."},
+
+    {"id": "p-004", "name": "Brass Diya (Pair)", "price_inr": 349, "image": "https://picsum.photos/seed/diya2/640/640", "collection": "festive", "stock": 60, "desc": "Matching brass diya pair with carved base."},
+    {"id": "p-005", "name": "Lakshmi Pooja Kit", "price_inr": 899, "image": "https://picsum.photos/seed/lakshmi/640/640", "collection": "festive", "stock": 30, "desc": "Complete kit for Lakshmi pooja, festive ready."},
+    {"id": "p-006", "name": "Ganesh Idol (Marble Finish)", "price_inr": 799, "image": "https://picsum.photos/seed/ganesh/640/640", "collection": "festive", "stock": 0, "desc": "Elegant Ganesh idol with smooth marble finish."},
+
+    {"id": "p-007", "name": "Temple Bell (Brass)", "price_inr": 599, "image": "https://picsum.photos/seed/bell/640/640", "collection": "temple-essentials", "stock": 20, "desc": "Solid brass bell with crisp resonant tone."},
+    {"id": "p-008", "name": "Panchapatra & Uddharini Set", "price_inr": 649, "image": "https://picsum.photos/seed/panchapatra/640/640", "collection": "temple-essentials", "stock": 18, "desc": "Traditional copper set for holy water offerings."},
+    {"id": "p-009", "name": "Copper Kalash (Medium)", "price_inr": 549, "image": "https://picsum.photos/seed/kalash/640/640", "collection": "temple-essentials", "stock": 22, "desc": "Premium copper kalash for auspicious rituals."},
+
+    {"id": "p-010", "name": "Rudraksha Mala (5 Mukhi)", "price_inr": 399, "image": "https://picsum.photos/seed/rudraksha/640/640", "collection": "devotional-gifts", "stock": 0, "desc": "Authentic 5‑mukhi rudraksha for daily japa."},
+    {"id": "p-011", "name": "Brass Ganesh Keychain", "price_inr": 149, "image": "https://picsum.photos/seed/keychain/640/640", "collection": "devotional-gifts", "stock": 150, "desc": "Pocket‑size blessing—solid brass Ganesh charm."},
+    {"id": "p-012", "name": "Framed God Photo (8x10)", "price_inr": 299, "image": "https://picsum.photos/seed/frame1/640/640", "collection": "devotional-gifts", "stock": 80, "desc": "High‑quality print with protective acrylic frame."},
+
+    {"id": "p-013", "name": "Havan Kund (Iron)", "price_inr": 1199, "image": "https://picsum.photos/seed/kund/640/640", "collection": "homam-havan", "stock": 10, "desc": "Sturdy iron kund for home havan ceremonies."},
+    {"id": "p-014", "name": "Havan Samagri Mix 500g", "price_inr": 229, "image": "https://picsum.photos/seed/samagri/640/640", "collection": "homam-havan", "stock": 70, "desc": "Balanced herb blend for sacred fire offerings."},
+    {"id": "p-015", "name": "Ghee for Havan 200ml", "price_inr": 199, "image": "https://picsum.photos/seed/ghee/640/640", "collection": "homam-havan", "stock": 60, "desc": "Pure cow ghee in spill‑safe bottle for rituals."},
+
+    {"id": "p-016", "name": "Dhoop Cones (Sandal) 50pcs", "price_inr": 179, "image": "https://picsum.photos/seed/dhoop/640/640", "collection": "incense-dhoop", "stock": 140, "desc": "Slow‑burn cones with warm sandal fragrance."},
+    {"id": "p-017", "name": "Agarbatti (Rose) 100 sticks", "price_inr": 129, "image": "https://picsum.photos/seed/agarbatti/640/640", "collection": "incense-dhoop", "stock": 200, "desc": "Classic rose scent for calm, devotional ambience."},
+    {"id": "p-018", "name": "Incense Holder (Brass)", "price_inr": 249, "image": "https://picsum.photos/seed/holder/640/640", "collection": "incense-dhoop", "stock": 55, "desc": "Weighted holder fits agarbatti and dhoop cones."},
+
+    {"id": "p-019", "name": "Tulsi Mala", "price_inr": 249, "image": "https://picsum.photos/seed/tulsi/640/640", "collection": "devotional-gifts", "stock": 95, "desc": "Blessed tulsi beads—gentle on skin for japa."},
+    {"id": "p-020", "name": "Brass Oil Lamp (Tall)", "price_inr": 999, "image": "https://picsum.photos/seed/talllamp/640/640", "collection": "festive", "stock": 12, "desc": "Tall pedestal lamp for festive home decor."},
+    {"id": "p-021", "name": "Kumkum & Haldi Pack", "price_inr": 99, "image": "https://picsum.photos/seed/kumkum/640/640", "collection": "daily-pooja", "stock": 200, "desc": "Vibrant kumkum and haldi in sealed pouches."},
+
+    {"id": "p-022", "name": "Brass Bell (Small)", "price_inr": 249, "image": "https://picsum.photos/seed/smallbell/640/640", "collection": "temple-essentials", "stock": 70, "desc": "Compact bell with bright, clear chime."},
+    {"id": "p-023", "name": "Copper Kalash (Large)", "price_inr": 899, "image": "https://picsum.photos/seed/kalash2/640/640", "collection": "temple-essentials", "stock": 8, "desc": "Large copper kalash for weddings and puja."},
+    {"id": "p-024", "name": "Ganesh Murti (Clay)", "price_inr": 349, "image": "https://picsum.photos/seed/ganesh2/640/640", "collection": "festive", "stock": 45, "desc": "Eco‑friendly clay murti ideal for immersion."}
+  ]
+}
