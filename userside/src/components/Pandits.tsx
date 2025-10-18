@@ -3,7 +3,7 @@ import React, { useEffect, useMemo, useState } from 'react'
 import { Link } from 'react-router-dom'
 import { getPandits, type Pandit } from '../services/pandit'
 import Navbar from './Navbar'
-import { Search, MapPin, Star, Calendar, Languages, Award } from 'lucide-react'
+import { Search, MapPin, Languages, Award } from 'lucide-react'
 
 const PLACEHOLDER = 'https://picsum.photos/seed/pandit/480/360'
 

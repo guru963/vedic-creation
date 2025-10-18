@@ -1,5 +1,5 @@
 // src/sections/ServicesPageFlip.tsx
-import React, { useEffect, useMemo, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import { motion, AnimatePresence, useMotionValue, useTransform, type Variants, type Easing } from "framer-motion";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import om from "../assets/om.png";

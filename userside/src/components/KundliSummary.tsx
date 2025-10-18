@@ -1,4 +1,4 @@
-import React from "react"
+
 
 type Props = { data: any; title?: string }
 

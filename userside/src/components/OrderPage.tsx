@@ -1,6 +1,6 @@
 // src/components/Store.tsx
 import React, { useMemo } from 'react'
-import { Boxes, PlusSquare, ReceiptText } from 'lucide-react'
+import { Boxes, ReceiptText } from 'lucide-react'
 import { useSearchParams } from 'react-router-dom'
 import MyOrders from './MyOrders'
 import MyBookings from './MyBookings'
@@ -49,7 +49,7 @@ const OrderPage: React.FC = () => {
               <button
                 key={t.key}
                 onClick={() => setTab(t.key)}
-                className={`${pill} ${isActive ? 'outline outline-2 outline-white/70' : ''}`}
+                className={`${pill} ${isActive ? ' outline-2 outline-white/70' : ''}`}
                 style={{ background: t.grad }}
                 title={t.label}
               >

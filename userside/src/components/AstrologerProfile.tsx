@@ -1,11 +1,9 @@
-import React from "react";
 import { useParams, Link } from "react-router-dom";
-import { ArrowLeft, MessageCircle, Star, Clock, Calendar, Award, Languages, Zap, Heart, Shield, Users, Sparkles } from "lucide-react";
+import { ArrowLeft, MessageCircle, Star, Clock, Calendar, Award, Languages, Zap, Heart, Shield, Users } from "lucide-react";
 import { ASTROLOGERS } from "../components/astrologers";
 import Navbar from "./Navbar";
 
 const gradientText = "bg-gradient-to-r from-[#F53C44] via-[#FA7236] to-[#FA9F2C] bg-clip-text text-transparent";
-const gradientBg = "bg-gradient-to-r from-[#F53C44] via-[#FA7236] to-[#FA9F2C]";
 const money = (n:number)=>`₹${n.toLocaleString('en-IN')}`
 
 export default function AstrologerProfile() {
@@ -163,7 +161,7 @@ export default function AstrologerProfile() {
             <div className="space-y-3 mb-6">
               <Link 
                 to={`/chat/${astro.id}`} 
-                className="block w-full rounded-lg px-4 py-3 text-white font-semibold bg-gradient-to-r from-[#F53C44] via-[#FA7236] to-[#FA9F2C] hover:shadow-md transition-all inline-flex items-center gap-2 justify-center"
+                className="block w-full rounded-lg px-4 py-3 text-white font-semibold bg-gradient-to-r from-[#F53C44] via-[#FA7236] to-[#FA9F2C] hover:shadow-md transition-all items-center gap-2 justify-center"
               >
                 <MessageCircle className="h-5 w-5"/>
                 Start Live Chat

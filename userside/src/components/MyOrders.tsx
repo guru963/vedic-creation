@@ -5,7 +5,7 @@ import { getMyOrders } from '../services/orders'
 import {
   ChevronDown, Package, Truck, CheckCircle, XCircle, Clock,
   ClipboardCopy, Check, ExternalLink, Undo2, X, Image as ImageIcon,
-  Loader2, Info, Calendar as CalIcon, Shield, RotateCcw,
+  Loader2,  Calendar as CalIcon, Shield, RotateCcw,
   MessageCircle, Phone, Mail
 } from 'lucide-react'
 

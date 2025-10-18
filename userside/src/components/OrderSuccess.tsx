@@ -1,5 +1,4 @@
 // src/pages/OrderSuccess.tsx
-import React from 'react'
 import { useParams, Link } from 'react-router-dom'
 import Navbar from './Navbar'
 import { CheckCircle } from 'lucide-react'

@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import  { useEffect, useState } from "react";
 import { Link, useNavigate, useLocation } from "react-router-dom";
 import { Menu, X, ShoppingCart, ChevronDown, LogOut, User, Package } from "lucide-react";
 // ⬇️ adjust this import path to your AuthContext

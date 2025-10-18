@@ -81,7 +81,7 @@ function BirthModal({
 
   const selectedCountry = countries.find(c => c.isoCode === countryCode);
   const selectedState = states.find(s => s.isoCode === stateCode);
-  const selectedCity = cities.find(c => c.name && String(c.id) === cityId);
+  const selectedCity = cities.find(c => c.name && c.name === cityId);
 
   const placeFromDropdowns = [
     selectedCity?.name,
@@ -146,7 +146,7 @@ function BirthModal({
             >
               <option value="">{cities.length ? "Select City" : "No cities"}</option>
               {cities.map(c => (
-                <option key={String(c.id)} value={String(c.id)}>{c.name}</option>
+                <option key={c.name} value={c.name}>{c.name}</option>
               ))}
             </select>
           </div>

@@ -1,7 +1,6 @@
-import React, { useEffect, useState } from 'react'
+import  { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 import { getMyBookings, getBookingEvents, type BookingRow, type BookingEvent } from '../services/bookings'
-import Navbar from '../components/Navbar'
 
 const money = (n:number)=> `₹${n.toLocaleString('en-IN')}`
 

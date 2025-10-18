@@ -1,6 +1,4 @@
 // src/components/PanchangCard.tsx
-import React from "react"
-
 type Props = {
   data: any
   heading?: string
