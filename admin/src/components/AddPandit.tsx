@@ -1,7 +1,7 @@
 // src/components/admin/AddPandit.tsx
 import React, { useEffect, useMemo, useState } from 'react'
 import supabase from '../lib/supabase'
-import { Plus, X, Clock, Calendar, User, Phone, Mail, MapPin, Languages, Award, FileText, Trash2 } from 'lucide-react'
+import { Plus, X, Clock, Calendar, User, Phone, Mail, Languages, Award, FileText, Trash2 } from 'lucide-react'
 
 // ---- Types matching your SQL ----
 type Service = {

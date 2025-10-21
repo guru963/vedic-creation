@@ -8,8 +8,8 @@ const Login: React.FC = () => {
   // State for form fields
   const [email, setEmail] = useState<string>("")
   const [password, setPassword] = useState<string>("")
-  const [role, setRole] = useState<"admin">("admin")
-  const {signIn,user} = useAuth() // Assuming useAuth is imported from AuthContext
+  const [role] = useState<"admin">("admin")
+  const {signIn} = useAuth() // Assuming useAuth is imported from AuthContext
   const navigate = useNavigate()
 
   // Submit handler

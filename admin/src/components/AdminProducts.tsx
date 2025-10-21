@@ -1,6 +1,6 @@
 import React, { useEffect, useMemo, useState } from 'react'
 import supabase from '../lib/supabase'
-import type { PostgrestSingleResponse } from '@supabase/supabase-js'
+
 import { Search, Pencil, Trash2, Eye, X, Loader2, Image as ImageIcon, Package, IndianRupee, Box, ChevronLeft, ChevronRight } from 'lucide-react'
 
 type Product = {

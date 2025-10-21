@@ -1,7 +1,6 @@
-import React, { useEffect, useMemo, useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import supabase from '../lib/supabase'
 import { Plus, Image, CheckCircle, AlertCircle, Loader2, IndianRupee, Package, Tag } from 'lucide-react'
-import BulkImportPanel from './BulkImport'
 
 type Collection = {
   id: string
@@ -20,6 +19,7 @@ type Department = {
 }
 
 const money = (n: number) => `₹${n.toLocaleString("en-IN")}`
+console.log(money(10000));
 const slugify = (s: string) =>
   s.toLowerCase().trim()
     .replace(/[^a-z0-9\s-]/g, '')

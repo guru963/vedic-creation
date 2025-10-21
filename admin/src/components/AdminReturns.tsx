@@ -5,7 +5,7 @@ import {
   RefreshCw, CheckCircle2, XCircle, Truck, Loader2,
   ChevronDown, Search, Filter, Download, Eye, EyeOff,
   Receipt, Copy, Calendar, Package, CreditCard, MessageCircle, 
-  Plus, Minus, User, Mail, Phone, MapPin, AlertCircle,
+  Plus, Minus, User, Mail, Phone, AlertCircle,
   BarChart3, Clock, CheckCircle, X, ArrowUpDown
 } from 'lucide-react'
 

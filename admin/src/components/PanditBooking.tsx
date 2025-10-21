@@ -1,6 +1,6 @@
 // src/components/Store.tsx
 import React, { useMemo } from 'react'
-import { Boxes, PlusSquare, ReceiptText } from 'lucide-react'
+import { Boxes, PlusSquare } from 'lucide-react'
 import { useSearchParams } from 'react-router-dom'
 import AddPandit from './AddPandit'
 import AdminBookings from './ConfirmBooking'

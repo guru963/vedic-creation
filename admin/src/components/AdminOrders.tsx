@@ -1,5 +1,5 @@
 // src/components/AdminOrders.tsx
-import React, { useEffect, useMemo, useState } from 'react'
+import { useEffect, useMemo, useState } from 'react'
 import supabase from '../lib/supabase'
 import {
   ChevronDown, Loader2, Package, Truck, CheckCircle2, Clock, RefreshCw,
@@ -128,7 +128,7 @@ export default function AdminOrders() {
         .order('created_at', { ascending: false })
 
       if (error) throw error
-      const orders = (data || []) as OrderRow[]
+      const orders = (data || []) as unknown as OrderRow[]
       setRows(orders)
 
       // fetch events for these orders

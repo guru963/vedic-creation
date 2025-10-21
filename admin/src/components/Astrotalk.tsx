@@ -1,4 +1,4 @@
-import React from 'react'
+
 import BulkImportPanel from './BulkImport'
 
 const Astrotalk = () => {

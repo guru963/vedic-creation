@@ -88,7 +88,7 @@ const AdminBookings: React.FC = () => {
       setRows([])
       return
     }
-    setRows((data || []) as BookingRow[])
+    setRows((data || []) as unknown as BookingRow[])
   }
 
   useEffect(() => { load() }, [])
