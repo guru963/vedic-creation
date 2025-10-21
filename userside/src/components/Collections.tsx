@@ -6,7 +6,6 @@ import { useNavigate, useLocation, Link } from "react-router-dom";
 import { Search, Filter, X, Eye, ShoppingCart, ChevronLeft, ChevronRight } from "lucide-react";
 
 /** DB Types */
-type DbCollection = { id: string; name: string; slug: string; image_url: string | null };
 type DbProduct = {
   id: string;
   slug: string;
@@ -362,7 +361,7 @@ const CollectionsPage: React.FC = () => {
   // helpers
   const qtyOf = (id: string) => cart.find((c) => c.id === id)?.qty ?? 0;
 
-  // NOTE: add-to-cart kept identical to yours…
+  // centralised cart helpers (now used)
   const increment = (p: UiProduct) => {
     if (!requireLogin()) return;
     if (p.stock <= 0) return;
@@ -661,15 +660,15 @@ const CollectionsPage: React.FC = () => {
                               </span>
                             )}
                           </div>
-                          {/* Eye -> detail page */}
+                          {/* Eye -> Quick View */}
                           <button
                             type="button"
                             onClick={(e) => {
                               e.preventDefault();
-                              navigate(`/product/${p.slug}`);
+                              setView(p);
                             }}
                             className="absolute top-3 right-3 p-2 bg-white/90 backdrop-blur-sm rounded-lg hover:bg-white transition-colors"
-                            title="View details"
+                            title="Quick view"
                           >
                             <Eye className="h-4 w-4 text-gray-600" />
                           </button>
@@ -704,12 +703,7 @@ const CollectionsPage: React.FC = () => {
                           <div className="mt-auto">
                             {!showControls ? (
                               <button
-                                onClick={() => {
-                                  if (!requireLogin()) return;
-                                  if (p.stock <= 0) return;
-                                  setCart((prev) => [...prev, { id: p.id, qty: 1, product: p }]);
-                                  push("Added to cart");
-                                }}
+                                onClick={() => increment(p)}
                                 disabled={p.stock <= 0}
                                 className="w-full px-4 py-3 text-white font-semibold bg-gradient-to-r from-[#F53C44] via-[#FA7236] to-[#FA9F2C] rounded-lg hover:shadow-lg transition-all disabled:opacity-50 disabled:cursor-not-allowed"
                               >
@@ -718,24 +712,7 @@ const CollectionsPage: React.FC = () => {
                             ) : (
                               <div className="flex items-center justify-center gap-1 bg-gray-100 rounded-lg p-1">
                                 <button
-                                  onClick={() => {
-                                    if (!requireLogin()) return;
-                                    setCart((prev) => {
-                                      const i = prev.findIndex((it) => it.id === p.id);
-                                      if (i < 0) return prev;
-                                      const item = prev[i];
-                                      const newQty = item.qty - 1;
-                                      const copy = [...prev];
-                                      if (newQty <= 0) {
-                                        copy.splice(i, 1);
-                                        push("Removed from cart");
-                                      } else {
-                                        copy[i] = { ...item, qty: newQty };
-                                        push("Updated quantity");
-                                      }
-                                      return copy;
-                                    });
-                                  }}
+                                  onClick={() => decrement(p)}
                                   className="w-10 h-10 rounded-lg border-2 border-orange-300 text-amber-800 font-semibold hover:bg-orange-50 transition-all flex items-center justify-center"
                                   disabled={qCart === 0}
                                 >
@@ -744,14 +721,8 @@ const CollectionsPage: React.FC = () => {
                                 <span className="px-4 py-2 text-sm font-medium min-w-12 text-center">{qCart}</span>
                                 <button
                                   onClick={() => {
-                                    if (!requireLogin()) return;
-                                    if (qCart >= p.stock) return;
-                                    setCart((prev) => {
-                                      const i = prev.findIndex((it) => it.id === p.id);
-                                      const copy = [...prev];
-                                      copy[i] = { ...copy[i], qty: copy[i].qty + 1 };
-                                      return copy;
-                                    });
+                                    if (qtyOf(p.id) >= p.stock) return;
+                                    increment(p);
                                   }}
                                   className="w-10 h-10 rounded-lg border-2 border-orange-300 text-amber-800 font-semibold hover:bg-orange-50 transition-all flex items-center justify-center"
                                   disabled={qCart >= p.stock}
@@ -771,7 +742,7 @@ const CollectionsPage: React.FC = () => {
           </div>
         </div>
 
-        {/* Legacy modal (optional) */}
+        {/* Quick View modal */}
         {view && (
           <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/50 p-4">
             <div className="bg-white rounded-2xl shadow-xl max-w-2xl w-full max-h-[90vh] overflow-hidden">
@@ -816,7 +787,7 @@ const CollectionsPage: React.FC = () => {
       </div>
 
       {/* Hide scrollbar on collection scroller */}
-      <style jsx>{`
+      <style>{`
         .no-scrollbar::-webkit-scrollbar {
           display: none;
         }

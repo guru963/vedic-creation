@@ -174,7 +174,7 @@ export default function MyOrders() {
       setUserId(user.id)
 
       const data = await getMyOrders()
-      const orders = (data as OrderRow[]) || []
+      const orders = (data as unknown as OrderRow[]) || []
       setRows(orders)
 
       const orderIds = orders.map(o => o.id)
@@ -319,6 +319,7 @@ export default function MyOrders() {
     const lines: ReturnLineDraft[] = order.order_items.map(it => {
       const cap = capsByItem[it.id]?.remaining_qty
       const maxRemain = typeof cap === 'number' ? cap : it.qty
+      console.log({ it, cap, maxRemain })
       return {
         order_item_id: it.id,
         product_id: it.product_id,
@@ -677,6 +678,7 @@ export default function MyOrders() {
     { code: 'replacement', label: 'Replacement', desc: 'Receive a new item' },
     { code: 'store_credit', label: 'Store Credit', desc: 'Instant credit for future purchases' },
   ]
+  console.log(resolutions);
 
   return (
     <div className="min-h-screen bg-gray-50 py-8">

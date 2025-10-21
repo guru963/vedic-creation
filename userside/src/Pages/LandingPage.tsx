@@ -1,4 +1,4 @@
-import React from 'react'
+
 import HeroSection from '../components/Hero'
 import FestiveCorner from '../components/FestiveSection'
 import About from '../components/About'

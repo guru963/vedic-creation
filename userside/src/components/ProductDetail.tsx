@@ -1,5 +1,5 @@
 // src/pages/ProductDetail.tsx
-import React, { useEffect, useMemo, useState } from "react";
+import React, { useEffect, useMemo, useState, type JSX } from "react";
 import { useParams, Link, useNavigate } from "react-router-dom";
 import supabase from "../supabase";
 import Navbar from "./Navbar";
@@ -18,19 +18,19 @@ import {
 // -----------------------------
 // Types
 // -----------------------------
-type DbProduct = {
-  id: string;
-  slug: string;
-  name: string;
-  image_url: string | null;
-  price_inr: number;
-  compare_at_price_inr: number | null;
-  stock: number;
-  description: string | null;
-  tags: string | null;
-  is_active?: boolean;
-  created_at?: string;
-};
+// type DbProduct = {
+//   id: string;
+//   slug: string;
+//   name: string;
+//   image_url: string | null;
+//   price_inr: number;
+//   compare_at_price_inr: number | null;
+//   stock: number;
+//   description: string | null;
+//   tags: string | null;
+//   is_active?: boolean;
+//   created_at?: string;
+// };
 
 type UiProduct = {
   id: string;
@@ -161,13 +161,8 @@ const SECTION_HEADING = new RegExp(
 );
 
 // For reference only (not looped with exec)
-const LINE_KV = new RegExp(
-  String.raw`^[\s\-•*·]*(?:\*\*)?(${LABEL_CORE})(?:\*\*)?\s*(?:[:：\-–—]\s*)(.+?)\s*$`,
-  "im"
-);
 
 // For lists (not looped with exec)
-const BULLET_LINE = /^[\s\-•*·]+(.+?)\s*$/im;
 
 // IMPORTANT: add the **g** flag — we loop with exec(...) here as well.
 const INLINE_KV = new RegExp(
