@@ -1,14 +1,17 @@
 # 🕉️ Vedic Creation App
 
-Vedic Creation is a full-stack spiritual platform that brings together Vedic e-commerce, astrology consultations, and pandit booking services into a single modern application. The goal is to digitize traditional Vedic services while maintaining authenticity, trust, and a seamless user experience.
+Vedic Creation is a full-stack spiritual platform that integrates Vedic e-commerce, astrology consultations, and pandit booking services into a single modern application. The platform is designed to digitize traditional Vedic services while preserving authenticity, trust, and a seamless user experience.
+
+Repository: https://github.com/guru963/vedic-creation
 
 ---
 
 ## ✨ Features
 
-### 🔐 Authentication
+### 🔐 Authentication (Supabase)
 - User signup, login, and logout
-- Secure authentication system
+- Secure authentication using Supabase Auth
+- Email and password based authentication
 - User profile management
 - Order history and booking history
 
@@ -23,15 +26,17 @@ Vedic Creation is a full-stack spiritual platform that brings together Vedic e-c
 
 ---
 
-### 🔮 Astro Talk
-- Chat and call based astrology consultations
-- Verified astrologers
+### 🔮 Astro Talk (AI-Powered)
+- AI-powered astrology chat experience
+- Online Astro Talk Bot for instant guidance
+- Gemini API integration for intelligent conversation and reasoning
+- Astrology APIs for horoscope, kundli, and astrological insights
 - Real-time interaction
-- Consultation records and history
+- Consultation records and chat history
 
 ---
 
-### 🧑‍🦳 Pandit Booking
+### 🧑‍🦳 Pandit Booking System
 - Book pandits for Vedic rituals and ceremonies
 - Pooja, Homam, Wedding, Housewarming, etc.
 - Date and time scheduling
@@ -43,92 +48,105 @@ Vedic Creation is a full-stack spiritual platform that brings together Vedic e-c
 ### 🧾 Additional Features
 - Notifications for orders and bookings
 - Admin management for products, astrologers, and pandits
-- Responsive and user-friendly UI
+- Responsive and modern UI
 - Secure and scalable architecture
+- Clean and modular codebase
 
 ---
 
 ## 🛠️ Tech Stack
 
-### Frontend
-- React / React Native
+Frontend:
+- React
+- TypeScript
 - HTML, CSS, JavaScript
-- Tailwind CSS / Bootstrap
+- Tailwind CSS
 
-### Backend
-- Node.js / Django / Firebase
+Backend & Services:
+- Supabase (Authentication, Database, Storage)
 - REST APIs
-- Authentication and authorization
+- Gemini API for AI-powered Astro Talk
+- Astrology APIs for astrological data and predictions
 
-### Database
-- MongoDB / PostgreSQL / Firebase Firestore
+Database:
+- Supabase PostgreSQL
 
-### Payments
-- Razorpay / Stripe / UPI
+Payments:
+- Razorpay / UPI (extendable)
 
-### Deployment
+Deployment:
 - Vercel / Netlify (Frontend)
-- Render / AWS / Railway (Backend)
+- Supabase (Backend services)
+
+---
+
+## 🚀 Getting Started
+
+Clone the repository:
+git clone https://github.com/guru963/vedic-creation.git
+cd vedic-creation
+
+Install dependencies:
+npm install
+
+Run the application:
+npm run dev
+
+---
+
+## 🔐 Environment Variables
+
+Create a .env file in the root directory and add:
+
+VITE_SUPABASE_URL=your_supabase_url
+VITE_SUPABASE_ANON_KEY=your_supabase_anon_key
+VITE_GEMINI_API_KEY=your_gemini_api_key
+VITE_ASTRO_API_KEY=your_astrology_api_key
+
+---
+
+## 🎥 Demo Video
+
+A complete walkthrough video of the application demonstrating:
+- Authentication flow
+- Vedic e-commerce features
+- AI-powered Astro Talk bot
+- Pandit booking system
+
+Demo video path:
+./assets/demo.mp4
 
 ---
 
 ## 🏗️ Project Structure
 
-vedic-creation-app/
+vedic-creation/
 │
-├── frontend/
+├── src/
 │   ├── components/
 │   ├── pages/
 │   ├── services/
-│   └── utils/
+│   ├── hooks/
+│   ├── utils/
+│   └── types/
 │
-├── backend/
-│   ├── controllers/
-│   ├── models/
-│   ├── routes/
-│   └── middleware/
+├── public/
 │
-├── database/
+├── supabase/
+│
+├── assets/
+│   └── demo.mp4
 │
 ├── README.md
 └── package.json
 
 ---
 
-## 🚀 Getting Started
-
-### Clone the Repository
-git clone https://github.com/your-username/vedic-creation-app.git  
-cd vedic-creation-app
-
-### Install Dependencies
-npm install
-
-### Run the Application
-npm start
-
----
-
-## 🔐 Environment Variables
-
-Create a `.env` file and add the following:
-
-DATABASE_URL=your_database_url  
-JWT_SECRET=your_secret_key  
-PAYMENT_GATEWAY_KEY=your_payment_key  
-
----
-
-## 📸 Screenshots
-Add application screenshots or demo videos here.
-
----
-
 ## 🤝 Contributing
-1. Fork the repository  
-2. Create a new branch  
-3. Commit your changes  
-4. Open a pull request  
+1. Fork the repository
+2. Create a new branch
+3. Commit your changes
+4. Open a pull request
 
 ---
 
@@ -138,10 +156,10 @@ This project is licensed under the MIT License.
 ---
 
 ## 🙏 Acknowledgements
-Vedic Creation is inspired by the richness of Vedic culture and aims to bridge ancient wisdom with modern technology.
+Vedic Creation is inspired by the depth of Vedic culture and spirituality and aims to bridge ancient wisdom with modern technology using AI.
 
 ---
 
 ## 📬 Contact
-Email: your-email@example.com  
-Website: your-website-link
+GitHub: https://github.com/guru963
+Email: your-email@example.com
