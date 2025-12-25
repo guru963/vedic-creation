@@ -16,7 +16,7 @@ A complete walkthrough video of the application demonstrating:
 - Pandit booking system
 - Admin dashboard functionality
 
-[Click here to watch the demo video](./Screen Recording 2025-12-25 112857)
+[Click here to watch the demo video](./Screen Recording 2025-12-25 112857.mp4)
 
 
 ---
