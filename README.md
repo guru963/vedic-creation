@@ -7,6 +7,19 @@ Admin Dashboard (Live): https://admin.vediccreation.com/
 Website:https://vediccreation.com/
 
 ---
+## 🎥 Demo Video
+
+A complete walkthrough video of the application demonstrating:
+- Authentication flow
+- Vedic e-commerce features
+- AI-powered Astro Talk bot
+- Pandit booking system
+- Admin dashboard functionality
+
+[Click here to watch the demo video](./Screen Recording 2025-12-25 112857)
+
+
+---
 
 ## ✨ Features
 
@@ -119,19 +132,7 @@ VITE_ASTRO_API_KEY=your_astrology_api_key
 
 ---
 
-## 🎥 Demo Video
 
-A complete walkthrough video of the application demonstrating:
-- Authentication flow
-- Vedic e-commerce features
-- AI-powered Astro Talk bot
-- Pandit booking system
-- Admin dashboard functionality
-
-Demo video path:
-./assets/demo.mp4
-
----
 
 ## 🏗️ Project Structure
 
