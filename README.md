@@ -1,8 +1,10 @@
 # 🕉️ Vedic Creation App
 
-Vedic Creation is a full-stack spiritual platform that integrates Vedic e-commerce, astrology consultations, and pandit booking services into a single modern application. The platform is designed to digitize traditional Vedic services while preserving authenticity, trust, and a seamless user experience.
+Vedic Creation is a full-stack spiritual platform that integrates Vedic e-commerce, astrology consultations, pandit booking services, and a dedicated admin dashboard into a single modern ecosystem. The platform is designed to digitize traditional Vedic services while preserving authenticity, trust, and a seamless user experience.
 
-Repository: https://github.com/guru963/vedic-creation
+Repository: https://github.com/guru963/vedic-creation  
+Admin Dashboard (Live): https://admin.vediccreation.com/
+Website:https://vediccreation.com/
 
 ---
 
@@ -45,9 +47,20 @@ Repository: https://github.com/guru963/vedic-creation
 
 ---
 
+### 🛠️ Admin Dashboard (Deployed)
+- Live admin panel hosted at https://admin.vediccreation.com/
+- Manage products, categories, and inventory
+- Manage astrologers and pandits
+- View and manage user orders and bookings
+- Monitor consultations and platform activity
+- Secure admin-only access
+- Real-time data management using Supabase
+
+---
+
 ### 🧾 Additional Features
 - Notifications for orders and bookings
-- Admin management for products, astrologers, and pandits
+- Role-based access control (User / Admin)
 - Responsive and modern UI
 - Secure and scalable architecture
 - Clean and modular codebase
@@ -77,6 +90,7 @@ Payments:
 Deployment:
 - Vercel / Netlify (Frontend)
 - Supabase (Backend services)
+- Dedicated deployed Admin Dashboard
 
 ---
 
@@ -98,10 +112,10 @@ npm run dev
 
 Create a .env file in the root directory and add:
 
-VITE_SUPABASE_URL=your_supabase_url
-VITE_SUPABASE_ANON_KEY=your_supabase_anon_key
-VITE_GEMINI_API_KEY=your_gemini_api_key
-VITE_ASTRO_API_KEY=your_astrology_api_key
+VITE_SUPABASE_URL=your_supabase_url  
+VITE_SUPABASE_ANON_KEY=your_supabase_anon_key  
+VITE_GEMINI_API_KEY=your_gemini_api_key  
+VITE_ASTRO_API_KEY=your_astrology_api_key  
 
 ---
 
@@ -112,6 +126,7 @@ A complete walkthrough video of the application demonstrating:
 - Vedic e-commerce features
 - AI-powered Astro Talk bot
 - Pandit booking system
+- Admin dashboard functionality
 
 Demo video path:
 ./assets/demo.mp4
@@ -161,5 +176,5 @@ Vedic Creation is inspired by the depth of Vedic culture and spirituality and ai
 ---
 
 ## 📬 Contact
-GitHub: https://github.com/guru963
-Email: your-email@example.com
+GitHub: https://github.com/guru963  
+
